@@ -16,6 +16,6 @@ button.pack(pady=6)
 
 # Cerrar automáticamente tras 2 segundos para que el script no bloquee
 app.after(2000, app.destroy)
-
+#3
 if __name__ == '__main__':
     app.mainloop()
