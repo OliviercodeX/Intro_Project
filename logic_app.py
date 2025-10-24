@@ -24,6 +24,9 @@ print(create_flight("F","A","B",0, 3,3, "x"))
 def get_flight(index):
     return flights[index]
 
+
+#E: row, column, index
+#S: a new matrix with the selected seat occupied
 def book_flight(row,column,index):
     matrix = flights[index][4]  #to look the matrix inside the flight selected of index of flights
     for _ in range(len(matrix)):
@@ -43,7 +46,8 @@ def book_flight(row,column,index):
     
 
 
-
+#E: row, column, index
+#S: a new matrix without that seat ocuppied
 
 def cancel_flight(row,column,index):
     matrix = flights[index][4]
