@@ -8,6 +8,6 @@ def create_flight(code, origin, destination, price, row, column,elem, sold_count
     seat_matrix = [[elem]*row for i in range(column)]
     
     flights.append([code,origin,destination, price, seat_matrix,sold_count])
-    return len(flights)
+    return len(flights)-1
 
 
