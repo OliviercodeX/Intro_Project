@@ -1,5 +1,9 @@
 import customtkinter as ctk
 
+LETTER = "Times New Roman"
+SIZE = 20
+
+
 def main_window():
     ctk.set_appearance_mode("System")
     ctk.set_default_color_theme("blue")
@@ -9,7 +13,7 @@ def main_window():
     app.title("Test customtkinter")
 
     # Usar solo grid() — no mezclar pack() y grid()
-    label = ctk.CTkLabel(app, text="Bienvenido", font=("Times New Roman", 20))
+    label = ctk.CTkLabel(app, text="Bienvenido", font=(LETTER, SIZE))
     label.grid(row=0, column=10, columnspan=2, pady=(12, 8), padx=12)
 
     button = ctk.CTkButton(app, text="Cerrar", command=app.destroy)
